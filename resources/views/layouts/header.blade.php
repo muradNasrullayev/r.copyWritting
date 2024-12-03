@@ -62,6 +62,10 @@
                         <a class="nav-link" href="{{route('booking')}}">Booking</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('blogs')}}">Blogs</a>
+                    </li>
+
                 </ul>
             </div>
 
