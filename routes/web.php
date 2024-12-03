@@ -1,9 +1,8 @@
 <?php
 
-use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\MainController;
-use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\TimeLineController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,7 +18,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MainController::class, 'index'])->name('home');
-Route::get('/about', [AboutController::class, 'about'])->name('about');
-Route::get('/timeline', [TimeLineController::class, 'timeline'])->name('timeline');
-Route::get('/testimonial', [TestimonialController::class,'testimonial'])->name('testimonial');
+Route::get('/services', [ServiceController::class, 'service'])->name('service');
 Route::get('/booking', [BookingController::class,'booking'])->name('booking');
+Route::get('/blogs', [BookingController::class,'blogs'])->name('timeline');

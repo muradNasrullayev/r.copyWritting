@@ -10,4 +10,9 @@ class BookingController extends Controller
     {
         return view('web.booking');
     }
+
+    public function blogs()
+    {
+        return view('web.blogs');
+    }
 }

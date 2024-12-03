@@ -1,4 +1,3 @@
-@include('layouts.header')
 <section class="section-padding pb-0" id="reviews">
     <div class="container">
         <div class="row">
@@ -114,4 +113,4 @@
         </div>
     </div>
 </section>
-@include('layouts.footer')
+

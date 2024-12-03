@@ -50,11 +50,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('about')}}">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('timeline')}}">Timeline</a>
+                        <a class="nav-link" href="{{route('service')}}">Service</a>
                     </li>
 
                     <a class="navbar-brand d-none d-lg-block" href="{{asset('home')}}">
@@ -63,16 +59,9 @@
                     </a>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('testimonial')}}">Testimonials</a>
-                    </li>
-
-                    <li class="nav-item">
                         <a class="nav-link" href="{{route('booking')}}">Booking</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
                 </ul>
             </div>
 
