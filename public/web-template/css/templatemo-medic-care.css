@@ -507,6 +507,289 @@ strong {
     font-weight: var(--font-weight-semibold);
     margin-left: auto;
 }
+.logo-img {
+    max-height: 50px; /* Logonun maksimum yüksekliği */
+    width: auto; /* Genişlik orantılı olarak ayarlanır */
+    display: block; /* İyi hizalama için */
+    margin: 0 auto; /* Ortalamak için */
+}
+/*---------------------------------------
+  SERVİCE PAGE  section-1
+-----------------------------------------*/
+.service1-pricing * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.service1-pricing {
+    background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.service1-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service1-pricing-header {
+    padding-top: 25px;
+    margin-bottom: 50px;
+}
+
+.service1-pricing-label {
+    color: #6366F1;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.service1-pricing h1 {
+    color: #1F2937;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.service1-subtitle {
+    color: #6B7280;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 32px;
+}
+
+.service1-toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.service1-toggle {
+    width: 48px;
+    height: 24px;
+    background: #6366F1;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.service1-toggle::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+.service1-pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.service1-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.service1-card.service1-popular {
+    background: #6366F1;
+    color: white;
+}
+
+.service1-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.service1-card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(99, 102, 241, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service1-popular .service1-card-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.service1-plan-name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.service1-popular .service1-plan-name {
+    color: white;
+}
+
+.service1-popular-tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    margin-left: auto;
+}
+
+.service1-price {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.service1-period {
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.service1-popular .service1-period {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.service1-features-title {
+    font-weight: 500;
+    margin: 24px 0 16px;
+}
+
+.service1-feature-list {
+    list-style: none;
+}
+
+.service1-feature-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6B7280;
+}
+
+.service1-popular .service1-feature-list li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.service1-feature-list i {
+    color: #6366F1;
+}
+
+.service1-popular .service1-feature-list i {
+    color: white;
+}
+
+.service1-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #6366F1;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.service1-popular .service1-btn {
+    background: white;
+    color: #6366F1;
+}
+/*---------------------------------------
+  SERVİCE PAGE  section-2
+-----------------------------------------*/
+.service-2-container {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1339;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.service-2-wrapper {
+    max-width: 1000px;
+    padding: 60px;
+    text-align: center;
+}
+
+.service-2-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.service-2-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-2-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-2-card {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+
+.service-2-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.service-2-badge.service-2-free {
+    background-color: #2b2152;
+}
+
+.service-2-badge.service-2-paid {
+    background-color: #2b2152;
+}
+
+.service-2-card-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.service-2-card-description {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
 
 /*---------------------------------------
   WHY CHOOSE US

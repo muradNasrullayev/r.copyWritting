@@ -53,9 +53,9 @@
                         <a class="nav-link" href="{{route('service')}}">Service</a>
                     </li>
 
+                    <!-- Logo Kısmı -->
                     <a class="navbar-brand d-none d-lg-block" href="{{asset('home')}}">
-                        Medic Care
-                        <strong class="d-block">Health Specialist</strong>
+                        <img src="{{ asset('web-template/images/logo.jpg') }}" alt="Medic Care Logo" class="logo-img">
                     </a>
 
                     <li class="nav-item">
@@ -65,9 +65,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('blogs')}}">Blogs</a>
                     </li>
-
                 </ul>
             </div>
+
 
         </div>
     </nav>
