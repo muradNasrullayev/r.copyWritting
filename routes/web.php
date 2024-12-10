@@ -1,6 +1,11 @@
 <?php
 
-use App\Http\Controllers\{BlogController,ServiceController,BookingController, MainController};
+use App\Http\Controllers\web\{
+    BlogController,
+    BookingController,
+    MainController,
+    ServiceController};
+use App\Http\Controllers\admin\{WhyChooseUsController ,MainController as AdminController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +18,15 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//WEB
 Route::get('/', [MainController::class, 'index']);
 Route::get('/home', [MainController::class, 'index'])->name('home');
 Route::get('/services', [ServiceController::class, 'service'])->name('service');
 Route::get('/booking', [BookingController::class,'booking'])->name('booking');
 Route::get('/blogs', [BlogController::class,'blogs'])->name('blogs');
+
+//ADMIN
+Route::group(['prefix'=>'/admin','as'=>'admin.'], function () {
+    Route::get('/',[AdminController::class,'index'])->name('home');
+    Route::resource('/whychooseus', WhyChooseUsController::class);
+});

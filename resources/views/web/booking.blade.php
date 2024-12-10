@@ -1,4 +1,5 @@
-@include('layouts.header')
+@section('title', 'Booking')
+@include('web.layouts.header')
 <section class="section-padding" id="booking">
     <div class="container">
         <div class="row">
@@ -47,4 +48,4 @@
         </div>
     </div>
 </section>
-@include('layouts.footer')
+@include('web.layouts.footer')

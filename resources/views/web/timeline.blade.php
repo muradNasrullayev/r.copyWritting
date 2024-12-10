@@ -1,4 +1,4 @@
-@include('layouts.header')
+@include('web.layouts.header')
 <section class="section-padding pb-0" id="timeline">
     <div class="container">
         <div class="row">
@@ -24,13 +24,14 @@
                 </div>
 
                 <div
-                    class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+                        class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
                     <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
                         <h3 class=" text-light">Consulting your health</h3>
 
                         <p>You are fully permitted to use this template for your commercial or personal website. You are
                             not permitted to redistribute the template ZIP file for a download purpose on any other <a
-                                href="https://www.google.com/search?q=free+css" target="_blank">Free CSS collection</a>
+                                    href="https://www.google.com/search?q=free+css" target="_blank">Free CSS
+                                collection</a>
                             website.</p>
                     </div>
 
@@ -62,7 +63,7 @@
                 </div>
 
                 <div
-                    class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+                        class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
                     <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
                         <h3 class=" text-light">Covid-19 Hospitals</h3>
 
@@ -105,4 +106,4 @@
         </div>
     </div>
 </section>
-@include('layouts.footer')
+@include('web.layouts.footer')

@@ -911,13 +911,6 @@ strong {
     padding-right: 0 ;
 }
 
-.hero .container {
-    position: relative;
-    overflow: hidden;
-    height: 580px;
-    padding: 0 1px;
-}
-
 .heroText {
     background: var(--white-color);
     position: absolute;
@@ -952,6 +945,34 @@ body, html {
     padding: 0; /* Sağ ve sol padding'i sıfırladık */
     margin: 0; /* Dıştaki boşluğu kaldır */
     box-sizing: border-box; /* Border ve padding'i genişlik hesaplamalarına dahil et */
+    max-width: fit-content;
+}
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.file-label {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+    background-color: #0056b3;
+}
+
+.file-input {
+    display: none;
 }
 
 /* Hero Görseli Düzenlemeleri */
@@ -1063,8 +1084,72 @@ body, html {
 }
 
 /*---------------------------------------
-  NAVIGATION
+  HOME MAİN
 -----------------------------------------*/
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-main-section {
+    font-family: 'Inter', sans-serif;
+    background: url('../images/main.jpg') no-repeat center center fixed; /* Fotoğrafı arka plan olarak ekliyoruz */
+    background-size: cover; /* Fotoğrafın tüm alanı kaplamasını sağlarız */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.home-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.home-main-content-left {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.home-main-content-right {
+    flex: 1;
+    color: white;
+    text-align: left; /* Yazıyı sola hizalar */
+    margin-left: 400px; /* Yazıyı 100px sağa kaydırır */
+    width:    1000px;
+}
+
+.home-main-content-right h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.home-main-contact-btn {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.home-main-contact-btn:hover {
+    background-color: #f57c00;
+}
+
+/*---------------------------------------
+NAVIGATION
+-----------------------------------------*/
+
 .navbar {
     padding-top: 20px;
     padding-bottom: 20px;
