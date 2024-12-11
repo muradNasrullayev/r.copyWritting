@@ -367,7 +367,7 @@ button {
 /* Buton Stil */
 .section-4 .svc-btn {
     display: inline-block;
-    background-color: #2ecc71;
+    background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -442,8 +442,177 @@ strong {
     font-weight: var(--font-weight-bold);
 }
 /*---------------------------------------
+  BLOGS
+ -----------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Sayfa arka planı beyaz */
+    font-family: 'Inter', sans-serif;
+    color: white; /* Yazı rengi beyaz */
+}
+
+/* Ortadaki siyah katman */
+.center-layer {
+    background-color: #111111; /* Siyah arka plan */
+    color: white; /* Yazı rengi beyaz */
+    padding: 60px; /* İçerik için boşluk */
+    margin: 40px; /* Dış boşluk */
+    border-radius: 12px; /* Köşe yuvarlatma */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #CCCCCC;
+    margin-bottom: 60px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.tool {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tool-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.tool-description {
+    font-size: 14px;
+    color: #CCCCCC;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #f0f0f0;
+    font-weight: 500;
+}
+
+/* Responsive düzenleme */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Mobilde 1 sütun */
+    }
+}
+
+/*---------------------------------------
+  BOOKİNG
+-----------------------------------------*/
+/* Genel ayarlar */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Dış katman beyaz */
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+/* Ortadaki siyah katman */
+.blogs-new-center {
+    background-color: #111111; /* İç katman siyah */
+    padding: 60px;
+    margin: 40px; /* Dış beyaz boşluk */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+/* İçerik düzenleme */
+.blogs-new-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Başlık ve alt başlık */
+.blogs-new-title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.blogs-new-subtitle {
+    font-size: 16px;
+    color: #CCCCCC;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.blogs-new-highlight {
+    color: #f0f0f0;
+    font-weight: 500;
+}
+
+/* Grid düzeni */
+.blogs-new-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.blogs-new-tool {
+    text-align: center;
+}
+
+.blogs-new-icon {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.blogs-new-icon-img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 15px;
+}
+
+.blogs-new-tool-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.blogs-new-tool-description {
+    font-size: 14px;
+    color: #CCCCCC;
+    line-height: 1.5;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .blogs-new-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/*---------------------------------------
   LIST GROUP
 -----------------------------------------*/
+
 .list-group-item {
     background-color: transparent;
     color: var(--p-color);
@@ -769,6 +938,93 @@ strong {
     font-weight: 500;
     margin-bottom: 20px;
 }
+.ytviews-booking-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.ytviews-booking-container .left-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.ytviews-booking-container .brand {
+    color: #FFB800;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.ytviews-booking-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.ytviews-booking-container p {
+    color: #4B5563;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.ytviews-booking-container .right-section {
+    width: 45%;
+}
+
+.ytviews-booking-container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+.ytviews-booking-container .form-group {
+    margin-bottom: 20px;
+}
+
+.ytviews-booking-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-size: 14px;
+}
+
+.ytviews-booking-container input,
+.ytviews-booking-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.ytviews-booking-container select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.ytviews-booking-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #111827;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
 
 .service-2-badge.service-2-free {
     background-color: #2b2152;
@@ -919,6 +1175,7 @@ strong {
     right: 0px;
     padding: 1.5rem 2.5rem;
     width: 50%;
+    color: #1a1e21;
 }
 /* Sayfa Genelinde Boşlukları Kaldır */
 body, html {

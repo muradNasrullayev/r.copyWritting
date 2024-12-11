@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\WhyChooseUs\StoreRequest;
 use App\Models\WhyChooseUs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class WhyChooseUsController extends Controller
 {
@@ -59,15 +60,31 @@ class WhyChooseUsController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $whyChooseUs = WhyChooseUs::query()->find($id);
+        return view('admin.whychooseus.edit',compact('whyChooseUs'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request,  $id)
     {
-        //
+        $lastFile = WhyChooseUs::query()->find($id);
+        $data = [
+            'title' => $request->get('title'),
+            'content' => $request->get('content'),
+        ];
+
+        if (file_exists($request->icon)) {
+
+        $file = $request->file('icon');
+        $filename = time() . '-' . $file->getClientOriginalName();
+        $file->move(storage_path('/app/public/home/whyChooseUs/'), $filename);
+        $data['icon'] = "storage/home/whyChooseUs/$filename";
+        if ((file_exists(public_path($lastFile->icon)))) File::delete(public_path($lastFile->icon));
+    }
+        WhyChooseUs::query()->find($id)->update($data);
+        return redirect()->route('admin.whychooseus.index');
     }
 
     /**
@@ -75,7 +92,9 @@ class WhyChooseUsController extends Controller
      */
     public function destroy($id)
     {
-        WhyChooseUs::query()->find($id)->delete();
+        $file = WhyChooseUs::query()->find($id);
+        if ((file_exists(public_path($file->icon)))) File::delete(public_path($file->icon));
+        $file->delete();
         return redirect()->route('admin.whychooseus.index');
     }
 }

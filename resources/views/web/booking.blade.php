@@ -1,51 +1,43 @@
 @section('title', 'Booking')
 @include('web.layouts.header')
-<section class="section-padding" id="booking">
-    <div class="container">
-        <div class="row">
+<div class="ytviews-booking-container">
+    <section class="left-section">
+        <div class="brand">YTVIEWS.in</div>
+        <h1>Keep in touch</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur</p>
+        <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</p>
+    </section>
 
-            <div class="col-lg-8 col-12 mx-auto">
-                <div class="booking-form">
-
-                    <h2 class="text-center mb-lg-3 mb-2">Book an appointment</h2>
-
-                    <form role="form" action="#booking" method="post">
-                        <div class="row">
-                            <div class="col-lg-6 col-12">
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Full name"
-                                       required>
-                            </div>
-
-                            <div class="col-lg-6 col-12">
-                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-                                       placeholder="Email address" required>
-                            </div>
-
-                            <div class="col-lg-6 col-12">
-                                <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                       class="form-control" placeholder="Phone: 123-456-7890">
-                            </div>
-
-                            <div class="col-lg-6 col-12">
-                                <input type="date" name="date" id="date" value="" class="form-control">
-
-                            </div>
-
-                            <div class="col-12">
-                                <textarea class="form-control" rows="5" id="message" name="message"
-                                          placeholder="Additional Message"></textarea>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                                <button type="submit" class="form-control" id="submit-button">Book Now</button>
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
+    <section class="right-section">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
             </div>
+            <div class="form-group">
+                <label>Mobile No.</label>
+                <input type="tel">
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email">
+            </div>
+            <div class="form-group">
+                <label>What support you need regarding*</label>
+                <select>
+                    <option value="" disabled selected></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Support Category*</label>
+                <select>
+                    <option value="" disabled selected></option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</div>
 
-        </div>
-    </div>
-</section>
 @include('web.layouts.footer')

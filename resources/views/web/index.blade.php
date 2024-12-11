@@ -6,13 +6,11 @@
             <!-- Fotoğraf, HTML'de arka plan olarak kullanılacak -->
         </div>
         <div class="home-main-content-right">
-            <h1>Copywriting Services Company in India for Effective Sales Copy Writing</h1>
+            <h1>Turning Website Visitors Into Paying Clients With Copy Tailored for Finance Professionals.</h1>
             <a href="#" class="home-main-contact-btn">Contact Us</a>
         </div>
     </div>
 </section>
-
-
 <section class="hero" id="hero">
     <div class="container">
         <div class="row">
@@ -66,7 +64,6 @@
         </div>
     </div>
 </section>
-
 <section class="service_section layout_padding">
     <div class="container">
         <div class="heading_container">
@@ -129,7 +126,7 @@
     <div class="svc-sec-wrapper">
         <div class="svc-container">
             <div class="svc-card">
-                <img src="https://placehold.co/150x150"
+                <img src="{{asset('web-template/images/section-3-1.jpg')}}"
                      alt="Illustration of document pages with text blocks and small icons, drawn in a simple line style with mint green accent color"
                      class="svc-icon">
                 <h2 class="svc-title">Real Estate &<br> Finance Copywriting</h2>
@@ -140,7 +137,7 @@
             </div>
 
             <div class="svc-card">
-                <img src="https://placehold.co/150x150"
+                <img src="{{asset('web-template/images/section-3-2.jpg')}}"
                      alt="Illustration of a computer screen with gear icons above it, drawn in a simple line style with mint green accent color"
                      class="svc-icon">
                 <h2 class="svc-title">Targeted Lead Generation</h2>
@@ -151,7 +148,7 @@
             </div>
 
             <div class="svc-card">
-                <img src="https://placehold.co/150x150"
+                <img src="{{asset('web-template/images/section-3-3.jpg')}}"
                      alt="Illustration of a computer screen with search results and a magnifying glass, drawn in a simple line style with mint green accent color"
                      class="svc-icon">
                 <h2 class="svc-title">
@@ -165,7 +162,6 @@
         </div>
     </div>
 </section>
-
 <section class="contact-us-section">
     <div class="container">
         <div class="contact-text">
@@ -177,8 +173,6 @@
         </div>
     </div>
 </section>
-
 @include('web.testimonial')
-
 </main>
 @include('web.layouts.footer')

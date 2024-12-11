@@ -1,46 +1,41 @@
 @section('title', 'Blogs')
 @include('web.layouts.header')
-<section class="content-section-blogs">
-    <!-- Real Estate Section -->
-    <div class="card-blogs">
-        <h2 class="card-title-blogs">Sell Faster. Stand Out. Close More Deals.</h2>
-        <p class="card-text-blogs">
-            In today’s competitive real estate market, your marketing must go beyond the basics. Our copywriting
-            services are designed to help agents:
-        </p>
-        <ul class="card-list-blogs">
-            <li><strong>Craft Irresistible Property Listings:</strong> Highlight features buyers love with descriptions
-                that spark emotion and urgency.
-            </li>
-            <li><strong>Generate Qualified Leads:</strong> Persuasive landing pages and email campaigns convert browsers
-                into serious inquiries.
-            </li>
-            <li><strong>Rank in Local Searches:</strong> SEO-optimized listings and blogs ensure your properties are
-                seen by the right audience.
-            </li>
-        </ul>
-        <a href="#contact" class="cta-button-blogs">Contact Us Today</a>
-    </div>
+<section class="blogs-new-center">
+    <div class="blogs-new-content">
+        <h1 class="blogs-new-title">Notre méthodologie</h1>
+        <p class="blogs-new-subtitle">Créer une équipe pour votre projet c'est bien, avoir <span class="blogs-new-highlight">une organisation sans faille</span> c'est mieux. Pourquoi ? Pour gagner en productivité, en temps et en ébullition d'idées.</p>
 
-    <!-- Tax Accountants Section -->
-    <div class="card-blogs">
-        <h2 class="card-title-blogs">Build Authority. Attract High-Value Clients. Increase Retention.</h2>
-        <p class="card-text-blogs">
-            Tax firms thrive on trust and visibility. We create content that connects with your audience and builds your
-            reputation as a trusted expert. Our services include:
-        </p>
-        <ul class="card-list-blogs">
-            <li><strong>Persuasive Service Pages:</strong> Clearly explain your offerings with SEO-optimized copy
-                tailored for conversion.
-            </li>
-            <li><strong>Email Campaigns:</strong> Stay top-of-mind with newsletters and promotional emails that drive
-                repeat business.
-            </li>
-            <li><strong>Client Success Stories:</strong> Case studies that highlight your expertise and showcase
-                measurable results.
-            </li>
-        </ul>
-        <a href="#contact" class="cta-button-blogs">Get In Touch Today</a>
+        <div class="blogs-new-grid">
+            <div class="blogs-new-tool">
+                <i class="fas fa-comments blogs-new-icon"></i>
+                <div class="blogs-new-tool-name">Ateliers</div>
+                <p class="blogs-new-tool-description">Qui vont nous permettre d'échanger, de débattre, de proposer, de co-créer et de valider.</p>
+            </div>
+
+            <div class="blogs-new-tool">
+                <i class="fas fa-pencil-alt blogs-new-icon"></i>
+                <div class="blogs-new-tool-name">Figjam</div>
+                <p class="blogs-new-tool-description">Pour itérer sur votre projet, Figjam est un grand tableau blanc digital : Brainstorming, idées... vous allez adorer</p>
+            </div>
+
+            <div class="blogs-new-tool">
+                <img src="https://placehold.co/24x24" alt="Figma logo icon" class="blogs-new-icon-img">
+                <div class="blogs-new-tool-name">Figma</div>
+                <p class="blogs-new-tool-description">Pour imaginer ensemble le design et l'expérience de votre projet, Figma est l'outil que nous privilégions.</p>
+            </div>
+
+            <div class="blogs-new-tool">
+                <i class="fas fa-code blogs-new-icon"></i>
+                <div class="blogs-new-tool-name">Développement</div>
+                <p class="blogs-new-tool-description">Pour développer vos sites et applications nous favorisons : Webflow, Bubble, Adalo, Shopify et Wordpress.</p>
+            </div>
+
+            <div class="blogs-new-tool">
+                <img src="https://placehold.co/24x24" alt="Asana logo icon" class="blogs-new-icon-img">
+                <div class="blogs-new-tool-name">Asana</div>
+                <p class="blogs-new-tool-description">Pour la gestion de votre projet : planning, tâches, ticketing, gestion d'équipe, Asana est un indispensable.</p>
+            </div>
+        </div>
     </div>
 </section>
 
