@@ -7,7 +7,7 @@
         </div>
         <div class="home-main-content-right">
             <h1>Turning Website Visitors Into Paying Clients With Copy Tailored for Finance Professionals.</h1>
-            <a href="#" class="home-main-contact-btn">Contact Us</a>
+            <a href="{{route('booking')}}" class="home-main-contact-btn">Contact Us</a>
         </div>
     </div>
 </section>

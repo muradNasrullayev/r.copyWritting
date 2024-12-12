@@ -5,7 +5,10 @@ use App\Http\Controllers\web\{
     BookingController,
     MainController,
     ServiceController};
-use App\Http\Controllers\admin\{WhyChooseUsController ,MainController as AdminController};
+use App\Http\Controllers\admin\{IntroductionController,
+    WelcomePageController,
+    WhyChooseUsController,
+    MainController as AdminController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,4 +32,6 @@ Route::get('/blogs', [BlogController::class,'blogs'])->name('blogs');
 Route::group(['prefix'=>'/admin','as'=>'admin.'], function () {
     Route::get('/',[AdminController::class,'index'])->name('home');
     Route::resource('/whychooseus', WhyChooseUsController::class);
+    Route::resource('/introduction', IntroductionController::class);
+    Route::resource('/welcomepage', WelcomePageController::class);
 });
