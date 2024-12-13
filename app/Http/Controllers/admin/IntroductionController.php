@@ -89,7 +89,7 @@ class IntroductionController extends Controller
     public function destroy( $id)
     {
         $introduction = Introduction::query()->find($id);
-        if ((file_exists(public_path($introduction->background_image)))) {
+        if (file_exists(public_path($introduction->background_image))) {
             File::delete(public_path($introduction->background_image));
         } $introduction->delete();
         return redirect()->route('admin.introduction.index');

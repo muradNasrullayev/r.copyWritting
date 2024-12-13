@@ -56,11 +56,8 @@
                     <a class="collapse-item" href="{{route('admin.introduction.index')}}">Introduction</a>
                     <a class="collapse-item" href="{{route('admin.welcomepage.index')}}">Welcome Page</a>
                     <a class="collapse-item" href="{{route('admin.whychooseus.index')}}">Why choose us</a>
-                    <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                    <div class="collapse-divider"></div>
-                    <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="404.html">404 Page</a>
-                    <a class="collapse-item active" href="blank.html">Blank Page</a>
+                    <a class="collapse-item" href="{{route('admin.capabilities.index')}}">Capabilities</a>
+
                 </div>
             </div>
         </li>
