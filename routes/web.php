@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\{IntroductionController,
     MainController as AdminController,
+    TestimonialController,
     WelcomePageController,
     WhyChooseUsController,
     CapabilitiesController};
@@ -32,4 +33,5 @@ Route::group(['prefix'=>'/admin','as'=>'admin.'], function () {
     Route::resource('/introduction', IntroductionController::class);
     Route::resource('/welcomepage', WelcomePageController::class);
     Route::resource('/capabilities', CapabilitiesController::class);
+    Route::resource('/testimonials', TestimonialController::class);
 });

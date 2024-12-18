@@ -46,7 +46,6 @@
         </div>
     </div>
 </footer>
-
 <!-- JAVASCRIPT FILES -->
 <script src="{{asset('web-template/js/jquery.min.js')}}"></script>
 <script src="{{asset('web-template/js/bootstrap.bundle.min.js')}}"></script>

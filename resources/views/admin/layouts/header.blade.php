@@ -57,7 +57,7 @@
                     <a class="collapse-item" href="{{route('admin.welcomepage.index')}}">Welcome Page</a>
                     <a class="collapse-item" href="{{route('admin.whychooseus.index')}}">Why choose us</a>
                     <a class="collapse-item" href="{{route('admin.capabilities.index')}}">Capabilities</a>
-
+                    <a class="collapse-item" href="{{route('admin.testimonials.index')}}">Testimonials</a>
                 </div>
             </div>
         </li>
