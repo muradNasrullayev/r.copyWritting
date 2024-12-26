@@ -21,7 +21,7 @@ class Cart extends Model
        return $this->belongsTo(Plan::class);
     }
 
-    public function advantages()
+    public function advantage()
     {
        return $this->hasMany(Advantage::class);
     }

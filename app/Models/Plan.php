@@ -17,4 +17,9 @@ class Plan extends Model
     {
        return $this->hasMany(Cart::class);
     }
+
+    public function advantage()
+    {
+        return $this->hasManyThrough(Advantage::class, Cart::class);
+    }
 }

@@ -15,6 +15,7 @@ class AdvantagesController extends Controller
     public function index()
     {
         $advantages = Advantage::with('cart')->get();
+
         return view('admin.advantages.index', compact('advantages'));
     }
 

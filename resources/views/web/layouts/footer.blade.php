@@ -53,6 +53,19 @@
 <script src="{{asset('web-template/js/scrollspy.min.js')}}"></script>
 <script src="{{asset('web-template/js/custom.js')}}"></script>
 <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Sayfa yüklendiğinde ilk butona ve tüm kartlara aktiflik ekleyin
+        const firstButton = document.querySelector('.service1-nav-btn');
+        const firstPlanGroup = document.querySelectorAll(`[data-plan-group="${firstButton.getAttribute('data-plan')}"]`);
+
+        if (firstButton && firstPlanGroup.length > 0) {
+            firstButton.classList.add('service1-active');
+            firstPlanGroup.forEach(card => {
+                card.style.display = 'flex'; // Tüm ilgili kartları göster
+            });
+        }
+    });
+
     document.querySelectorAll('.service1-nav-btn').forEach(button => {
         button.addEventListener('click', () => {
             // 1. Aktif butonu değiştir
@@ -65,15 +78,14 @@
             });
 
             // 3. Seçilen plan grubunu göster
-            selectedPlan = button.getAttribute('data-plan');
+            const selectedPlan = button.getAttribute('data-plan');
             document.querySelectorAll(`[data-plan-group="${selectedPlan}"]`).forEach(card => {
                 card.style.display = 'flex'; // İlgili grubu görünür yapar
             });
         });
     });
-
-
 </script>
+
 
 </body>
 </html>

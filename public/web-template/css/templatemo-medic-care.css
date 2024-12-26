@@ -755,7 +755,11 @@ body {
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     flex-shrink: 0; /* Kartların boyutunun küçülmesini engeller */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Hafif bir kenarlık */
+    margin-bottom: 100px; /* Kartların altındaki boşluğu kaldırır */
 }
+
+
 
 /* Kart Başlığı */
 .service1-card-header {
