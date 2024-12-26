@@ -4,9 +4,9 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Blogs\StoreRequest;
-use App\Http\Requests\Blogs\UpdateRequest;
 use App\Models\Blogs;
 use Illuminate\Support\Facades\File;
+use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
@@ -75,13 +75,18 @@ class BlogController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateRequest $request, string $id)
+    public function update(Request $request, string $id)
     {
+//        return $request;
         if($id==1){
+            $request->validate([
+                'title' => 'required|min:3|max:255|string',
+                'description' => 'required|min:3|max:255|string',
+            ]);
             $blog = Blogs::query()->find(1);
             $data=[
-                'title'=>request('title'),
-                'description'=>request('description'),
+                'title'=>$request->input('title'),
+                'description'=>$request->input('description'),
                 'subTitle'=>'...........',
                 'subDescription'=>'..............',
                 'icon'=>'..............'
@@ -90,6 +95,10 @@ class BlogController extends Controller
             return redirect()->route('admin.blogs.index');
         }
         else {
+            $request->validate([
+                'subTitle' => 'required|min:3|max:255|string',
+                'subDescription' => 'required|min:3|max:255|string',
+            ]);
             $blog = Blogs::query()->find($id);
             $data = [
                 'subTitle' => $request->input('subTitle'),
