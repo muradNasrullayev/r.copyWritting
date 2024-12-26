@@ -52,8 +52,28 @@
 <script src="{{asset('web-template/js/owl.carousel.min.js')}}"></script>
 <script src="{{asset('web-template/js/scrollspy.min.js')}}"></script>
 <script src="{{asset('web-template/js/custom.js')}}"></script>
-<!-- Template Information -->
-<!-- TemplateMo 566 Medic Care -->
-<!-- https://templatemo.com/tm-566-medic-care -->
+<script>
+    document.querySelectorAll('.service1-nav-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            // 1. Aktif butonu değiştir
+            document.querySelectorAll('.service1-nav-btn').forEach(btn => btn.classList.remove('service1-active'));
+            button.classList.add('service1-active');
+
+            // 2. Tüm plan gruplarını gizle
+            document.querySelectorAll('.service1-pricing-cards').forEach(card => {
+                card.style.display = 'none'; // Tüm plan gruplarını gizler
+            });
+
+            // 3. Seçilen plan grubunu göster
+            selectedPlan = button.getAttribute('data-plan');
+            document.querySelectorAll(`[data-plan-group="${selectedPlan}"]`).forEach(card => {
+                card.style.display = 'flex'; // İlgili grubu görünür yapar
+            });
+        });
+    });
+
+
+</script>
+
 </body>
 </html>

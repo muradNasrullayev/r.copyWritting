@@ -75,9 +75,9 @@ class IntroductionController extends Controller
                 File::delete(public_path($introduction->background_image));
             }
             $file = $request->file('background_image');
-            $filename = time() . '-' . $file->getClientOriginalName();
-            $file->move(storage_path('/app/public/home/Introduction/'), $filename);
-            $data['background_image'] = "storage/home/Introduction/$filename";
+            $filename = 'main.jpg';
+            $file->move(storage_path('/app/public/home/'), $filename);
+            $data['background_image'] = "storage/home/$filename";
         }
         Introduction::query()->find($id)->update($data);
         return redirect()->route('admin.introduction.index');
@@ -88,11 +88,6 @@ class IntroductionController extends Controller
      */
     public function destroy( $id)
     {
-        $introduction = Introduction::query()->find($id);
-        if (file_exists(public_path($introduction->background_image))) {
-            File::delete(public_path($introduction->background_image));
-        } $introduction->delete();
-        return redirect()->route('admin.introduction.index');
 
     }
 }

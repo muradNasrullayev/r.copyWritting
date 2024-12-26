@@ -1,11 +1,15 @@
 <?php
 
-use App\Http\Controllers\admin\{IntroductionController,
+use App\Http\Controllers\Admin\PlanController;
+use App\Http\Controllers\admin\{AdvantagesController,
+    CartController,
+    IntroductionController,
     MainController as AdminController,
     TestimonialController,
     WelcomePageController,
     WhyChooseUsController,
-    CapabilitiesController};
+    CapabilitiesController,
+    BlogController as AdmiBlogsnController};
 use App\Http\Controllers\web\{BlogController, BookingController, MainController, ServiceController};
 use Illuminate\Support\Facades\Route;
 
@@ -34,4 +38,8 @@ Route::group(['prefix'=>'/admin','as'=>'admin.'], function () {
     Route::resource('/welcomepage', WelcomePageController::class);
     Route::resource('/capabilities', CapabilitiesController::class);
     Route::resource('/testimonials', TestimonialController::class);
+    Route::resource('/blogs', AdmiBlogsnController::class);
+    Route::resource('/plans', PlanController::class);
+    Route::resource('/carts', CartController::class);
+    Route::resource('/advantages', AdvantagesController::class);
 });

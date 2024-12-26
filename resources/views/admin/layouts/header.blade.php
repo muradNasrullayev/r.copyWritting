@@ -35,14 +35,14 @@
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            <div class="sidebar-brand-text mx-3">RC CopyWriting</div>
         </a>
 
         <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
+        <li class="nav-item active" >
             <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
                aria-controls="collapsePages">
                 <i class="fas fa-fw fa-folder"></i>
@@ -58,6 +58,28 @@
                     <a class="collapse-item" href="{{route('admin.whychooseus.index')}}">Why choose us</a>
                     <a class="collapse-item" href="{{route('admin.capabilities.index')}}">Capabilities</a>
                     <a class="collapse-item" href="{{route('admin.testimonials.index')}}">Testimonials</a>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item active" style="padding-left: 1px">
+            <a class="nav-link" href="{{route('admin.blogs.index')}}"  data-target="#collapsePages" aria-expanded="true">
+
+                <i class="fas fa-fw fa-folder" style="color: white"></i>
+                <span style="color: white">Blogs page</span>
+            </a>
+
+
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseServices" aria-expanded="true" aria-controls="collapseServices">
+                <i class="fas fa-fw fa-cogs"></i>
+                <span>Services</span>
+            </a>
+            <div id="collapseServices" class="collapse" aria-labelledby="headingServices" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="{{route('admin.plans.index')}}">Plan </a>
+                    <a class="collapse-item" href="{{route('admin.carts.index')}}"> Cart</a>
+                    <a class="collapse-item" href="{{route('admin.advantages.index')}}">Advantages</a>
                 </div>
             </div>
         </li>
@@ -277,3 +299,4 @@
 
             </nav>
             <!-- End of Topbar -->
+

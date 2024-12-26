@@ -8,7 +8,7 @@
         <div class="blogs-new-grid">
             <div class="blogs-new-tool">
                 <i class="fas fa-comments blogs-new-icon"></i>
-                <div class="blogs-new-tool-name">Craft Irresistible Property ListingsCraft Irresistible Property Listings</div>
+                <div class="blogs-new-tool-name">Craft Irresistible Property Listings</div>
                 <p class="blogs-new-tool-description">Highlight features buyers love with descriptions that spark emotion and urgency.
                 </p>
             </div>

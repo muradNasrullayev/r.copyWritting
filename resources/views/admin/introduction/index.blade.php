@@ -9,15 +9,14 @@
     <h1 class="h3 mb-4 text-gray-800">Introduction</h1>
 
 </div>
-<a type="button" class="btn btn-success" href="{{route('admin.introduction.create')}}">Add new item</a>
 <!-- /.container-fluid -->
 
 <table class="table">
     <thead class="thead-dark">
     <tr>
         <th scope="col">#</th>
-        <th scope="col">Background Image</th>
         <th scope="col">Content</th>
+        <th scope="col">Background Image</th>
         <th scope="col">Actions</th>
     </tr>
     </thead>
@@ -37,12 +36,6 @@
                         <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
                     </svg>
                 </a>
-                <form action="{{route('admin.introduction.destroy',$introduction->id)}}"
-                      method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger mt-3">Delete</button> <br>
-                </form>
             </div>
         </td>
     </tr>

@@ -549,6 +549,7 @@ body {
 
 /* Başlık ve alt başlık */
 .blogs-new-title {
+    color: #CCCCCC;
     font-size: 42px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -589,6 +590,7 @@ body {
 }
 
 .blogs-new-tool-name {
+    color: #CCCCCC;
     font-size: 20px;
     font-weight: 600;
     margin: 15px 0;
@@ -685,101 +687,77 @@ body {
 /*---------------------------------------
   SERVİCE PAGE  section-1
 -----------------------------------------*/
-.service1-pricing * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
-.service1-pricing {
-    background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);
-    min-height: 100vh;
-    padding: 50px 20px;
+body {
+    background: #f5f7ff;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
 }
 
-.service1-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
+/* Navigasyon Paneli */
+.service1-nav-panel {
 
-.service1-pricing-header {
-    padding-top: 25px;
-    margin-bottom: 50px;
-}
-
-.service1-pricing-label {
-    color: #6366F1;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 16px;
-}
-
-.service1-pricing h1 {
-    color: #1F2937;
-    font-size: 36px;
-    margin-bottom: 16px;
-}
-
-.service1-subtitle {
-    color: #6B7280;
-    font-size: 16px;
-    max-width: 600px;
-    margin: 0 auto 32px;
-}
-
-.service1-toggle-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 16px;
-    margin-bottom: 48px;
+    margin-top: 115px;
+    margin-bottom: 20px;
 }
 
-.service1-toggle {
-    width: 48px;
-    height: 24px;
+.service1-nav-btn {
     background: #6366F1;
-    border-radius: 12px;
-    position: relative;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
 }
 
-.service1-toggle::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    top: 2px;
-    left: 2px;
+.service1-nav-btn:hover, .service1-nav-btn.service1-active {
+    background: #4f46e5;
+}
+
+/* Pricing Bölümü */
+.service1-pricing {
+    background: #ffffff;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .service1-pricing-cards {
     display: flex;
-    justify-content: center;
-    gap: 24px;
-    /*flex-wrap: wrap;*/
+    justify-content: space-between; /* Kartlar arasındaki boşluğu ayarlayın */
+    gap: 24px; /* Kartlar arasındaki boşluk */
+    flex-wrap: nowrap; /* Kartların her zaman yan yana kalmasını sağlar */
+    max-width: 1200px; /* İçeriğin genişliğini sınırlayın */
+    margin: 0 auto; /* Ortalanmış */
 }
 
+/* Kart Stili */
 .service1-card {
     background: white;
     border-radius: 24px;
     padding: 32px;
-    width: 320px;
+    width: 300px; /* Sabit genişlik */
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0; /* Kartların boyutunun küçülmesini engeller */
 }
 
-.service1-card.service1-popular {
-    background: #6366F1;
-    color: white;
-}
-
+/* Kart Başlığı */
 .service1-card-header {
     display: flex;
     align-items: center;
@@ -797,28 +775,13 @@ body {
     justify-content: center;
 }
 
-.service1-popular .service1-card-icon {
-    background: rgba(255, 255, 255, 0.2);
-}
-
 .service1-plan-name {
     font-weight: 500;
     font-size: 14px;
     color: #6B7280;
 }
 
-.service1-popular .service1-plan-name {
-    color: white;
-}
-
-.service1-popular-tag {
-    font-size: 12px;
-    padding: 4px 12px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    margin-left: auto;
-}
-
+/* Fiyat */
 .service1-price {
     font-size: 36px;
     font-weight: 700;
@@ -830,10 +793,7 @@ body {
     font-size: 14px;
 }
 
-.service1-popular .service1-period {
-    color: rgba(255, 255, 255, 0.8);
-}
-
+/* Özellik Listesi */
 .service1-features-title {
     font-weight: 500;
     margin: 24px 0 16px;
@@ -851,18 +811,11 @@ body {
     color: #6B7280;
 }
 
-.service1-popular .service1-feature-list li {
-    color: rgba(255, 255, 255, 0.8);
-}
-
 .service1-feature-list i {
     color: #6366F1;
 }
 
-.service1-popular .service1-feature-list i {
-    color: white;
-}
-
+/* Seçim Butonu */
 .service1-btn {
     width: 100%;
     padding: 12px;
@@ -875,9 +828,11 @@ body {
     margin-top: 24px;
 }
 
-.service1-popular .service1-btn {
-    background: white;
-    color: #6366F1;
+@media (max-width: 768px) {
+    .service1-card {
+        width: auto; /* Küçük ekranlarda bile kart genişliği değişmesin */
+
+    }
 }
 /*---------------------------------------
   SERVİCE PAGE  section-2
@@ -1165,6 +1120,7 @@ body {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0 ;
+    width: 100vw;
 }
 
 .heroText {
@@ -1345,39 +1301,35 @@ body, html {
 -----------------------------------------*/
 /* Genel Ayarlar */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+                       margin: 0;
+                       padding: 0;
+                       box-sizing: border-box;
+                   }
 
 .home-main-section {
     font-family: 'Inter', sans-serif;
-    background: url('../images/main.jpg') no-repeat center center fixed; /* Fotoğrafı arka plan olarak ekliyoruz */
-    background-size: cover; /* Fotoğrafın tüm alanı kaplamasını sağlarız */
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+    min-height: 100vh; /* Tam ekran yüksekliği */
+    background: url("../../storage/home/main.jpg") no-repeat center center; /* Arka plan görseli */
+    background-size: cover; /* Görselin tüm alanı kaplamasını sağlar */
+    display: flex; /* İçerik hizalaması için flexbox kullanımı */
+    justify-content: flex-end; /* İçeriği sağ tarafa hizalar */
+    align-items: center; /* İçeriği dikey olarak ortalar */
     padding: 20px;
-}
+    position: relative;
+    color: white; /* Yazı rengini beyaz yap
+
 
 .home-main-container {
+    max-width: 1200px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-.home-main-content-left {
-    flex: 1;
-    padding-right: 50px;
+    justify-content: flex-end; /* İçeriği sağa hizalar */
 }
 
 .home-main-content-right {
-    flex: 1;
-    color: white;
-    text-align: left; /* Yazıyı sola hizalar */
-    margin-left: 400px; /* Yazıyı 100px sağa kaydırır */
-    width:    1000px;
+    text-align: right; /* Yazıyı sağa hizalar */
+    max-width: 500px; /* Yazıların ve butonun genişliğini sınırlar */
+    margin-right: 50px; /* Sağ kenardan boşluk bırakır */
 }
 
 .home-main-content-right h1 {
@@ -1402,6 +1354,7 @@ body, html {
 .home-main-contact-btn:hover {
     background-color: #f57c00;
 }
+
 
 /*---------------------------------------
 NAVIGATION

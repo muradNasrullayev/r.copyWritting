@@ -2,9 +2,9 @@
 @include('web.layouts.header')
 <div class="ytviews-booking-container">
     <section class="left-section">
-        <div class="brand">YTVIEWS.in</div>
+
         <h1>Keep in touch</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur</p>
+
         <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</p>
     </section>
 

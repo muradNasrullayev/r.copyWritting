@@ -91,13 +91,6 @@ class WelcomePageController extends Controller
      */
     public function destroy( $id)
     {
-        $welcome=WelcomePage::query()->find($id);
 
-        if (file_exists(public_path($welcome->background_image))) {
-            File::delete(public_path($welcome->background_image));
-        }
-        $welcome->delete();
-
-        return redirect()->route('admin.welcomepage.index');
     }
 }

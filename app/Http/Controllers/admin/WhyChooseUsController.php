@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\WhyChooseUs\StoreRequest;
+use App\Http\Requests\WhyChooseUs\UpdateRequest;
 use App\Models\WhyChooseUs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -67,7 +68,7 @@ class WhyChooseUsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request,  $id)
+    public function update(UpdateRequest $request,  $id)
     {
         $lastFile = WhyChooseUs::query()->find($id);
         $data = [
